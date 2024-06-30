@@ -1,0 +1,38 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: blanchedalmond;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 800px;
+	margin:100px;
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+h1{
+	color: blue;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+p{
+	color: #666;
+	font-size: 18px;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+a{
+	color: #612727;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #007bff;
+}
+
+A:focus{
+	outline: none;
+}

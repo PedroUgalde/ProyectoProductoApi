@@ -1,0 +1,37 @@
+<div class="mb-3"></div>
+<div class="container border-succes">
+    <div class="card border succes">
+        <div class="card border-primary text-center">
+            <div class="card-header text-primary">
+                <h1 class="card-title">
+                    {{titulo}}
+                </h1>
+            </div>
+            <div class="card-body text-primary">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="" class="form-label">idCategoria</label>
+                        <input type="text" class="form-control" id="txtIdCategoria" name="idCategoria"  [(ngModel)]="categoria.idCategoria" readonly>                   
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtNombreCategoria" class="form-label">nombre Categoria</label>
+                        <input type="text" class="form-control" id="txtNombreCategoria" name="nombreCategoria"  [(ngModel)]="categoria.nombreCategoria"  required>                   
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="txtDescripcionCategoria" class="form-label">descripcion Categoria</label>
+                        <input type="text" class="form-control" id="txtDescripcionCategoria" name="descripcionCategoria" [(ngModel)]="categoria.descripcionCategoria" required>                   
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-outline-succes form-control" *ngIf="categoria.idCategoria; else elseBlock" (Click)="actualizarCategoria()">Actualizar</button>
+                    </div>
+                   <ng-template #elseBlock>
+                    <div class="mbt-3">
+                        <button type="button" class="btn btn-outline-primary form-control" (click)="registrarCategoria()">Agregar</button>
+                    </div>
+                   </ng-template>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
